@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -u
+set -e   # ❗ Hata olursa script anında durur
 
 export DISPLAY=:0
 export XAUTHORITY="$HOME/.Xauthority"
@@ -31,9 +32,10 @@ if [ -f "$PANEL_PROFILE" ]; then
     xfce4-panel-profiles load "$PANEL_PROFILE"
 else
     echo "⚠ Panel profili bulunamadı"
+    exit 1   # ❗ Bilinçli hata → pkill çalışmaz
 fi
 
-    echo "▶ Geçici kurulum dosyaları temizleniyor..."
+echo "▶ Geçici kurulum dosyaları temizleniyor..."
 
 if [ -d "$HOME/satellaos-installer" ]; then
     rm -rf "$HOME/satellaos-installer"
@@ -44,3 +46,6 @@ if [ -f "$HOME/.config/autostart/satella-autostart.desktop" ]; then
 fi
 
 echo "✔ SatellaOS boot tamamlandı"
+
+# ✅ SADECE her şey sorunsuzsa buraya gelinir
+pkill xfce4-terminal
