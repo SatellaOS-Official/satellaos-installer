@@ -1,3 +1,3 @@
 ```bash
-git clone https://github.com/13atm01/GRUB-Theme.git "$HOME/GRUB-Theme"
+git clone https://github.com/SatellaOS-Official/satellaos-installer.git "$HOME/satellaos-installer"
 ```
