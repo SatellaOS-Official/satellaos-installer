@@ -28,8 +28,6 @@ sudo apt install --no-install-recommends -y \
   lightdm \
   slick-greeter \
   lightdm-settings \
-  network-manager \
-  network-manager-gnome \
   ntfs-3g \
   gvfs \
   gvfs-backends \

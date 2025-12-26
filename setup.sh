@@ -4,10 +4,17 @@
 # This script prepares and runs all SatellaOS installer components in order
 
 # --------------------------------------------------
-# 01 - Install required base tools
+# 00 - Install required base tools
 # --------------------------------------------------
-echo "01 - Installing required base tools (curl, wget)..."
+echo "00 - Installing required base tools (curl, wget)..."
 sudo apt install --no-install-recommends -y curl wget
+
+# --------------------------------------------------
+# 01 - Install and ensure network connectivity
+# --------------------------------------------------
+echo "01 - Installing network components (required for installer)..."
+chmod +x "$HOME/satellaos-installer/network/network.sh"
+"$HOME/satellaos-installer/network/network.sh"
 
 # --------------------------------------------------
 # 02 - Enable and run APT sources configuration
