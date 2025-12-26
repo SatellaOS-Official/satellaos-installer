@@ -10,8 +10,6 @@ Current version of pixman: 0.44.0
 Markers: (--) probed, (**) from config file, (==) default setting,
 	(++) from command line, (!!) notice, (II) informational,
 	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
-(==) Log file: "/var/log/Xorg.0.log", Time: Thu Dec 25 16:50:36 2025
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Dec 26 18:33:29 2025
 (==) Using config directory: "/etc/X11/xorg.conf.d"
 (==) Using system config directory "/usr/share/X11/xorg.conf.d"
-(EE) client bug: timer event2 debounce: scheduled expiry is in the past (-27ms), your system is too slow
-(EE) client bug: timer event2 debounce short: scheduled expiry is in the past (-178ms), your system is too slow

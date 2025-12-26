@@ -34,6 +34,7 @@
       <property name="position-categories-alternate" type="bool" value="true"/>
       <property name="position-search-alternate" type="bool" value="true"/>
       <property name="recent" type="array">
+        <value type="string" value="xfce4-power-manager-settings.desktop"/>
         <value type="string" value="lightdm-settings.desktop"/>
         <value type="string" value="org.xfce.PanelProfiles.desktop"/>
         <value type="string" value="brave-browser.desktop"/>
