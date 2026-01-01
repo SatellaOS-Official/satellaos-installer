@@ -32,7 +32,8 @@ echo "24  - qBittorrent (Deb)"
 echo "25  - Grub Customizer (Deb)"
 echo "26  - Galculator (Deb)"
 echo "27  - Gucharmap (Deb)"
-echo "28  - Libre Office (Deb)"
+echo "28  - Gnome Software (Deb)"
+echo "29  - Libre Office (Deb)"
 echo "--------------------------------------"
 
 PKG_DIR="$HOME/satellaos-packages"
@@ -186,6 +187,10 @@ install_27() {
 }
 
 install_28() { 
+    sudo apt install -y gnome-software gnome-software-plugin-flatpak
+}
+
+install_29() { 
     sudo apt install -y libreoffice libreoffice-gtk3
 }
 
